@@ -92,6 +92,7 @@
   "publisher": "trb5016",
   "repository": {
     "type": "git",
-    "url": ""
-  }
+    "url": "https://github.com/trb5016/casmo-simulate-syntax"
+  },
+  "license": "MIT"
 }
