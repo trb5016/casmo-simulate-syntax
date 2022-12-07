@@ -1,0 +1,97 @@
+{
+  "name": "casmo-casmo-simulate-syntax",
+  "displayName": "CASMO/SIMULATE Syntax",
+  "description": "Provides syntax highlighting for SIMULATE3/5 input deck files",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand:casmo-simulate-syntax.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "casmo-simulate-syntax.helloWorld",
+        "title": "Hello SIMULATE!"
+      }
+    ],
+    "languages": [
+      {
+        "id": "simulate-input",
+        "aliases": [
+          "SIMULATE Input Deck",
+          "GARDEL"
+        ],
+        "extensions": [
+          ".inp", ".inc"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "simulate-output",
+        "aliases": [
+          "SIMULATE Output Deck"
+        ],
+        "extensions": [
+          ".out"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "simulate-input",
+        "scopeName": "source.simulate-input",
+        "path": "./syntaxes/simulate-input.tmLanguage.json"
+      },
+      {
+        "language": "simulate-output",
+        "scopeName": "source.simulate-output",
+        "path": "./syntaxes/simulate-output.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "SIMULATE-Dark-1",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SIMULATE-Dark-1.json"
+      },
+      {
+        "label": "SIMULATE-Dark-2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SIMULATE-Dark-2.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  },
+  "publisher": "trb5016",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

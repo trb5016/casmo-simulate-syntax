@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SIMULATE Input",
+	"patterns": [
+		{
+			"name": "comment.line.card.simulate",
+			"match": "^\\s*'COM'.*$"
+		},
+		{
+			"name": "comment.line.endline.simulate",
+			"match": "(?<=\\/).*$"
+		},		
+		{
+			"name": "invalid.illegal.simulate",
+			"match": "(?<=[\\s\\S]{125})[\\S]+"
+		},		
+		{
+			"name": "keyword.recordend.simulate",
+			"match": "(\\/)"
+		},
+		{
+			"name": "keyword.card.caseend.simulate",
+			"match": "'END'"
+		},
+		{
+			"name": "keyword.card.double.simulate",
+			"match": "^\\s*'[A-Z]{3}\\.[A-Z]{3}'"
+		},
+		{
+			"name": "keyword.card.single.simulate",
+			"match": "^\\s*'[A-Z]{3}'"
+		},
+		{
+			"name": "keyword.seperator.comma.simulate",
+			"match": ","
+		},
+		{
+			"name": "constant.numeric.integer.simulate",
+			"match": "(?<=[\\s,])[+-]?\\d+(?=[\\s,\\/])"
+		},
+		{
+			"name": "constant.numeric.float.sep-hasdot-hasED.simulate",
+			"match": "(?<=[\\s,])[+-]?[\\d]*\\.[\\d]*[ED][+-]?\\s?\\d*(?=[\\s,\\/])"
+		},
+		{
+			"name": "constant.numeric.float.sep-hasdot-noED-nosign.simulate",
+			"match": "(?<=[\\s,])[+-]?[\\d]*\\.[\\d]*(?=[\\s,\\/])"
+		},
+		{
+			"name": "constant.numeric.float.sep-hasdot-noED-hassign.simulate",
+			"match": "(?<=[\\s,])[+-]?[\\d]*\\.[\\d]*[+-]\\d+(?=[\\s,\\/])"
+		},
+		{
+			"name": "constant.numeric.float.sep-nodot.simulate",
+			"match": "(?<=[\\s,])[+-]?[\\d]+[ED]?[+-]?\\d+(?=[\\s,\\/])"
+		},
+		{
+			"name": "string.quoted.single.simulate",
+			"begin": "\\'",
+			"end": "\\'"
+		}
+		
+	],
+	"scopeName": "source.simulate-input"
+}

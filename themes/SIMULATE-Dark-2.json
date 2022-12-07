@@ -1,0 +1,92 @@
+{
+    "tokenColors": [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#888888"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword.card",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#5bb6f3"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword.card.caseend",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#00ffd5"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword.seperator",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#c2c2c2"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword.recordend",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#b85900"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#B5CEA8"
+            }
+        },
+        {
+            "name": "Integer",
+            "scope": "constant.numeric.integer",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#B5CEA8"
+            }
+        },
+        {
+            "name": "Boolean",
+            "scope": "constant.language.boolean",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#001aff"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#eba64d"
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "foreground": "#ff3333"
+            }
+        }
+    ],
+    "colors": {
+        "editor.background": "#1E1E1E",
+        "editorCursor.foreground": "#DCDCDC",
+        "editor.foreground": "#DCDCDC",
+        "editorWhitespace.foreground": "#ffffff1c",
+        "editor.lineHighlightBackground": "#0F0F0F",
+        "editor.selectionBackground": "#264F78"
+    },
+    "name": "SIMULATE3-Dark-2"
+}
