@@ -24,11 +24,11 @@
 		},
 		{
 			"name": "keyword.card.double.simulate",
-			"match": "^\\s*'[A-Z]{3}\\.[A-Z]{3}'"
+			"match": "^\\s*'[A-Z]{3}\\.[A-Z0-9]{3}'"
 		},
 		{
 			"name": "keyword.card.single.simulate",
-			"match": "^\\s*'[A-Z]{3}'"
+			"match": "^\\s*'([A-Z]{3}|ECHO|NOECHO|STOP)'"
 		},
 		{
 			"name": "keyword.seperator.comma.simulate",
