@@ -1,8 +1,8 @@
 {
-  "name": "casmo-casmo-simulate-syntax",
+  "name": "casmo-simulate-syntax",
   "displayName": "CASMO/SIMULATE Syntax",
   "description": "Provides syntax highlighting for SIMULATE3/5 input deck files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.73.0"
   },
