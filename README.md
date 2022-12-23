@@ -13,6 +13,9 @@ Contributiones are welcome.
 
 ## Release Notes
 
+### 1.0.1
+Added handling for missing cards that contain numbers or are more than 3 characters long
+
 ### 1.0.0
 
 Initial release.
